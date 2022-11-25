@@ -1,0 +1,11 @@
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\bin\Debug\ExcelLearning.exe.config
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\bin\Debug\ExcelLearning.exe
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\bin\Debug\ExcelLearning.pdb
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.csproj.AssemblyReference.cache
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.csproj.ResolveComReference.cache
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.Form1.resources
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.Properties.Resources.resources
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.csproj.GenerateResource.cache
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.exe
+C:\Users\Utilisateur\source\repos\Learning\ExcelLearning\obj\Debug\ExcelLearning.pdb
