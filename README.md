@@ -3,6 +3,11 @@
 ## Projet 2nde année de BTS Système Numérique
 ### Lycée Pierre Méchain, 02000, Laon
 
+## Groupe :
+- Camara Alexis
+- Maizel Mylan
+Classe : SN2
+
 ## Objectif :
 Pour une entreprise (AVL), nous devons comparer différents fichiers Excel (format *.xls ou *.xlsx) afin de choisir le meilleur transporteur pour AVL selon le déparement et le poids du colis.
 
