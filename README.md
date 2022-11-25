@@ -1,7 +1,7 @@
 # AVL-project-
 
 Choses à faire :
-- [ ] Créer un fichier de config pour mettre l'IP du serveur de l'entreprise
+- [x] Créer un fichier de config pour mettre l'IP du serveur de l'entreprise
 - [ ] Analyser la Mise en Page des fichiers XLS pour trouver des similitudes (Comment faire pour comparer ces fichiers ?)
 - [ ] Choix du transporteur selon poids et département.
 
