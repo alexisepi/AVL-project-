@@ -1,0 +1,11 @@
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\bin\Debug\Tarification AVL.exe.config
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\bin\Debug\Tarification AVL.exe
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\bin\Debug\Tarification AVL.pdb
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.csproj.AssemblyReference.cache
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification_AVL.HOME.resources
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification_AVL.Properties.Resources.resources
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.csproj.GenerateResource.cache
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.csproj.CoreCompileInputs.cache
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.exe
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.pdb
