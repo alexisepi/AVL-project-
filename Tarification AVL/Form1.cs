@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -16,15 +17,29 @@ namespace Tarification_AVL
 {
     public partial class HOME : Form
     {
+        Thread th;
+
         public HOME()
         {
             InitializeComponent();
 
-            this.MinimumSize = new System.Drawing.Size(690, 250); // Taille minimale de la fenêtre en pixels
+            this.MinimumSize = new System.Drawing.Size(690, 260); // Taille minimale de la fenêtre en pixels
             this.MaximumSize = new System.Drawing.Size(1100, 670); // Taille minimale de la fenêtre en pixels
         }
 
-        private void buttonSearch_Click(object sender, EventArgs e)
+        public void openForm2(object obj)
+        {
+            Application.Run(new Form2());
+        }
+
+        private void buttonExcel_Click(object sender, EventArgs e)
+        {
+            th = new Thread(openForm2);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void buttonSearch_Click_1(object sender, EventArgs e)
         {
             int columnNumber = 0;
 
@@ -35,7 +50,9 @@ namespace Tarification_AVL
             Excel.Workbook workbook = excelApp.Workbooks.Open("C:\\Users\\Mylan\\Documents\\Tarification AVL\\Tarifs.xlsx");
 
             // Sélection de la première feuille de calcul
-            Excel.Worksheet worksheet = workbook.Worksheets[1];
+            Excel.Worksheet table1 = workbook.Worksheets[1];
+            Excel.Worksheet table2 = workbook.Worksheets[2];
+            Excel.Worksheet table3 = workbook.Worksheets[3];
 
             //excelApp.Visible = true;
 
@@ -78,7 +95,7 @@ namespace Tarification_AVL
                     {
                         labelChoix.Text = $"Veuillez saisir le poids";
                     }
-                    else if(textBoxPoids.Text != "")
+                    else if (textBoxPoids.Text != "")
                     {
                         float poids = Single.Parse(textBoxPoids.Text);
 
@@ -128,30 +145,30 @@ namespace Tarification_AVL
                         }
 
                         // Lecture de la valeur de la cellule Bx (x étant la ligne correspondant à la valeur saisie)
-                        object value1 = worksheet.Cells[rowNumber + 2, columnNumber].Value;
-                        object value2 = worksheet.Cells[rowNumber + 2, columnNumber + 1].Value;
-                        object value3 = worksheet.Cells[rowNumber + 2, columnNumber + 2].Value;
+                        object value1 = table1.Cells[rowNumber + 2, columnNumber].Value;
+                        object value2 = table2.Cells[rowNumber + 2, columnNumber].Value;
+                        object value3 = table3.Cells[rowNumber + 2, columnNumber].Value;
 
-                        int VAL1 = Convert.ToInt32(value1);
-                        int VAL2 = Convert.ToInt32(value2);
-                        int VAL3 = Convert.ToInt32(value3);
+                        float VAL1 = Convert.ToSingle(value1);
+                        float VAL2 = Convert.ToSingle(value2);
+                        float VAL3 = Convert.ToSingle(value3);
 
-                        int min = Math.Min(Math.Min(VAL1, VAL2), VAL3);
+                        float min = Math.Min(Math.Min(VAL1, VAL2), VAL3);
 
                         // Si T1 est la plus petite
                         if (min == VAL1)
                         {
-                            labelChoix.Text = $"Le meilleur transporteur pour le département de {departements[index]} sera le transporteur 1 : T1 : " + value1;
+                            labelChoix.Text = $"Le meilleur transporteur pour le département de {departements[index]} sera le transporteur 1 : T1 : " + value1 + "€";
                         }
                         // Si T2 est la plus petite
                         else if (min == VAL2)
                         {
-                            labelChoix.Text = $"Le meilleur transporteur pour le département de {departements[index]} sera le transporteur 2 : T2 : " + value2;
+                            labelChoix.Text = $"Le meilleur transporteur pour le département de {departements[index]} sera le transporteur 2 : T2 : " + value2 + "€";
                         }
                         // Si T3 est la plus petite
                         else
                         {
-                            labelChoix.Text = $"Le meilleur transporteur pour le département de {departements[index]} sera le transporteur 3 : T3 : " + value3;
+                            labelChoix.Text = $"Le meilleur transporteur pour le département de {departements[index]} sera le transporteur 3 : T3 : " + value3 + "€";
                         }
                     }
 

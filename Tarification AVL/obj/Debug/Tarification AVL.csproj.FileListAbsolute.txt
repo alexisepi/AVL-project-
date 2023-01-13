@@ -9,3 +9,4 @@ C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarificatio
 C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.csproj.CoreCompileInputs.cache
 C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.exe
 C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification AVL.pdb
+C:\Users\Mylan\Documents\Tarification AVL\Tarification AVL\obj\Debug\Tarification_AVL.Form2.resources
